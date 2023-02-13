@@ -9,7 +9,7 @@ import Nav from './components/nav';
 
 function App() {
 
-  const [user, setUser] = useState(true);
+  const [user, setUser] = useState(null);
 
   return (
     <div className="App">

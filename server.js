@@ -1,14 +1,16 @@
 const express = require('express')
 const path = require('path')
 const logger = require('morgan')
+require('dotenv').config();
 
+require('./config/database')
 // cross origin access 
 const cors = require('cors')
 
 
 const app = express()
 
-//access
+//access to any client to make a request
 app.use(cors({
     origin: "*"
 }))
