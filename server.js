@@ -25,7 +25,13 @@ app.use(express.json())
 // serve our build folder
 app.use(express.static(path.join(__dirname, 'build')))
 
+app.post('/api/users', (req, res) => {
+    console.log(req.body);
+    // doing authentication here
 
+    // sending user response after creation or login
+    res.json("good route")
+})
 
 
 // Catch-all route
